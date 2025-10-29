@@ -1,70 +1,233 @@
-# Getting Started with Create React App
+# Schwimmschule - Swimming from Zero to Hero
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Eine moderne, responsive Schwimmschule-Website, entwickelt mit React, TypeScript, Vite und Tailwind CSS.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Moderne Technologie**: React 18, TypeScript, Vite
+- **Responsive Design**: Optimiert für alle Geräte
+- **Performance**: Lazy Loading, Code Splitting, Optimierte Bundle-Größe
+- **Accessibility**: WCAG-konforme Benutzeroberfläche
+- **SEO**: Optimierte Meta-Tags und Struktur
+- **State Management**: Zustand mit Zustand
+- **Styling**: Tailwind CSS mit benutzerdefinierten Komponenten
+- **Animationen**: Framer Motion für flüssige Übergänge
+- **Formulare**: React Hook Form mit Validierung
+- **Icons**: Lucide React Icons
 
-### `npm start`
+## 🛠️ Technologie-Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **Routing**: React Router DOM
+- **Animationen**: Framer Motion
+- **Formulare**: React Hook Form + Zod
+- **Icons**: Lucide React
+- **Linting**: ESLint + Prettier
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+### Voraussetzungen
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 18+ 
+- npm 8+
 
-### `npm run build`
+### Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Repository klonen**
+   ```bash
+   git clone <repository-url>
+   cd swimming
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Dependencies installieren**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Entwicklungsserver starten**
+   ```bash
+   npm run dev
+   ```
 
-### `npm run eject`
+4. **Browser öffnen**
+   ```
+   http://localhost:3000
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Verfügbare Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Entwicklungsserver starten
+npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Production Build erstellen
+npm run build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Build Preview
+npm run preview
 
-## Learn More
+# Linting
+npm run lint
+npm run lint:fix
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Code Formatting
+npm run format
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Type Checking
+npm run type-check
 
-### Code Splitting
+# Tests ausführen
+npm run test
+npm run test:ui
+npm run coverage
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Projektstruktur
 
-### Analyzing the Bundle Size
+```
+src/
+├── components/          # Wiederverwendbare Komponenten
+│   ├── ui/             # Basis UI-Komponenten
+│   ├── Navigation.tsx   # Hauptnavigation
+│   ├── Hero.tsx        # Hero-Sektion
+│   ├── CourseCard.tsx  # Kurs-Karten
+│   └── Footer.tsx      # Footer
+├── pages/              # Seiten-Komponenten
+│   ├── Home.tsx        # Startseite
+│   ├── Courses.tsx     # Kurse-Übersicht
+│   ├── CourseDetail.tsx # Kurs-Details
+│   └── ...
+├── hooks/              # Custom Hooks
+│   ├── useAppStore.ts  # Zustand Store
+│   └── index.ts        # Utility Hooks
+├── types/              # TypeScript Typen
+├── utils/              # Utility Funktionen
+├── constants/          # Konstanten
+├── data/               # Statische Daten
+├── styles/             # Globale Styles
+└── assets/             # Bilder und Assets
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 Design System
 
-### Making a Progressive Web App
+### Farben
+- **Primary**: Blau-Töne für Hauptaktionen
+- **Secondary**: Grün-Töne für sekundäre Aktionen  
+- **Accent**: Gelb-Töne für Highlights
+- **Neutral**: Grau-Töne für Text und Hintergründe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Typografie
+- **Display**: Poppins (Überschriften)
+- **Body**: Inter (Fließtext)
 
-### Advanced Configuration
+### Komponenten
+- **Button**: Verschiedene Varianten (primary, secondary, outline, ghost)
+- **Card**: Konsistente Karten-Layouts
+- **Input**: Formularelemente mit Validierung
+- **Navigation**: Responsive Navigation mit Mobile Menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Responsive Design
 
-### Deployment
+- **Mobile First**: Optimiert für mobile Geräte
+- **Breakpoints**: 
+  - sm: 640px
+  - md: 768px
+  - lg: 1024px
+  - xl: 1280px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ♿ Accessibility
 
-### `npm run build` fails to minify
+- **WCAG 2.1 AA**: Konforme Implementierung
+- **Keyboard Navigation**: Vollständige Tastatursteuerung
+- **Screen Reader**: Optimiert für Screen Reader
+- **Focus Management**: Sichtbare Focus-Indikatoren
+- **Color Contrast**: Ausreichende Farbkontraste
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Performance
+
+- **Code Splitting**: Automatische Code-Aufteilung
+- **Lazy Loading**: Komponenten werden bei Bedarf geladen
+- **Image Optimization**: Optimierte Bilder
+- **Bundle Analysis**: Kleinere Bundle-Größen
+- **Caching**: Effiziente Caching-Strategien
+
+## 🧪 Testing
+
+```bash
+# Unit Tests
+npm run test
+
+# Test UI (interaktiv)
+npm run test:ui
+
+# Coverage Report
+npm run coverage
+```
+
+## 📦 Deployment
+
+### Vercel (Empfohlen)
+```bash
+npm run build
+# Upload dist/ Ordner zu Vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Upload dist/ Ordner zu Netlify
+```
+
+### Docker
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "run", "preview"]
+```
+
+## 🔧 Konfiguration
+
+### Environment Variables
+Erstellen Sie eine `.env` Datei:
+```env
+VITE_API_URL=https://api.example.com
+VITE_GOOGLE_MAPS_API_KEY=your_api_key
+```
+
+### Tailwind Konfiguration
+Anpassungen in `tailwind.config.js`:
+- Farben
+- Schriftarten
+- Breakpoints
+- Animationen
+
+## 🤝 Contributing
+
+1. Fork das Repository
+2. Feature Branch erstellen (`git checkout -b feature/amazing-feature`)
+3. Änderungen committen (`git commit -m 'Add amazing feature'`)
+4. Branch pushen (`git push origin feature/amazing-feature`)
+5. Pull Request erstellen
+
+## 📄 Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz.
+
+## 📞 Support
+
+Bei Fragen oder Problemen:
+- 📧 Email: info@schwimmschule.de
+- 📱 Telefon: +49 (0) 123 456 789
+- 🌐 Website: https://schwimmschule.de
+
+---
+
+**Entwickelt mit ❤️ für die Schwimmschule**
